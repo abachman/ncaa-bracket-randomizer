@@ -1024,10 +1024,17 @@
       });
 
       // --- Load ---
-      fetch("2026.bracket.json")
+      const _params = new URLSearchParams(window.location.search);
+      const _bracketFile = _params.get("bracket") || "2026.bracket.json";
+      fetch(_bracketFile)
         .then((r) => r.json())
         .then((data) => {
           bracketData = data;
+          if (data.title) {
+            document.title = data.title + " Bracket Randomizer";
+            document.querySelector(".top-bar h1").textContent =
+              data.title + " Bracket Randomizer";
+          }
           initState();
           render();
         })

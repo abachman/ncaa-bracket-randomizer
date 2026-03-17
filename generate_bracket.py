@@ -46,7 +46,11 @@ bracket = {
         "bottomLeft": "south",
         "topRight": "west",
         "bottomRight": "midwest",
-    }
+    },
+    "east": {},
+    "south": {},
+    "west": {},
+    "midwest": {},
 }
 
 # --- East (left top) ---
