@@ -6,7 +6,7 @@ import json
 
 # Load barthag data
 barthag = {}
-with open("2026_team_results.csv") as f:
+with open("2026_team_results_ncaam.csv") as f:
     reader = csv.reader(f)
     next(reader)  # skip header
     for row in reader:
