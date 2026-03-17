@@ -46,6 +46,7 @@ name_map = {
     "Missouri State": "Missouri St.",
     "Michigan State": "Michigan St.",
     "Miami (OH)": "Miami OH",
+    "Oklahoma State": "Oklahoma St.",
 }
 
 
